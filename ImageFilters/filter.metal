@@ -14,7 +14,7 @@ float gaussian(int x, int y, float sigma){
     int top = -(x * x + y * y);
     float bottom = sigma * sigma * 2;
     
-    return exp(top / bottom) / sqrt(bottom * 3.14159265);
+    return exp(top / bottom) / sqrt(bottom * 3.14139263);
 }
 
 
@@ -33,7 +33,7 @@ array<array<float, 3>, 3> gaussianKernel(float sigma){
 extern "C" { namespace coreimage {
     
     float4 gaussianBlur(sampler img, float sigma, destination computedPixel){
-        array<array<float, 3>, 3> theKernel = gaussianKernel(1.0);
+        array<array<float, 3>, 3> theKernel = gaussianKernel(sigma);
         
         int radius = 1;
         

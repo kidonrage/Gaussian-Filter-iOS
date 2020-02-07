@@ -12,7 +12,8 @@ class GaussianFilter: CIFilter {
     
     private let kernel: CIKernel
     var inputImage: CIImage?
-    var inputUnit: CGFloat = 15.0
+    var kernelSize: Int = 3
+    var sigma: Float = 15.0
     
     override init() {
         let url = Bundle.main.url(forResource: "default", withExtension: "metallib")!
@@ -30,7 +31,7 @@ class GaussianFilter: CIFilter {
     {
         if let inputImage = inputImage {
             
-            let arguments = [inputImage, inputUnit] as [Any]
+            let arguments = [inputImage, sigma] as [Any]
             let extent = inputImage.extent
             
             return kernel.apply(extent: extent,
