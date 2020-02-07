@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E1149F0023EAC6620036F6A0 /* baby_yoda.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E1149EFF23EAC6620036F6A0 /* baby_yoda.jpeg */; };
+		E1149F0223EACBD90036F6A0 /* woman.png in Resources */ = {isa = PBXBuildFile; fileRef = E1149F0123EACBD90036F6A0 /* woman.png */; };
+		E1149F0423ED92C00036F6A0 /* filter.metal in Sources */ = {isa = PBXBuildFile; fileRef = E1149F0323ED92C00036F6A0 /* filter.metal */; };
+		E14C8CEF23E9D93D000DE644 /* GaussianFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E14C8CEE23E9D93D000DE644 /* GaussianFilter.swift */; };
 		E192DD842320BE4F00F4FDC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192DD832320BE4F00F4FDC6 /* AppDelegate.swift */; };
 		E192DD862320BE4F00F4FDC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E192DD852320BE4F00F4FDC6 /* ViewController.swift */; };
 		E192DD892320BE4F00F4FDC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E192DD872320BE4F00F4FDC6 /* Main.storyboard */; };
 		E192DD8B2320BE5100F4FDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E192DD8A2320BE5100F4FDC6 /* Assets.xcassets */; };
 		E192DD8E2320BE5100F4FDC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E192DD8C2320BE5100F4FDC6 /* LaunchScreen.storyboard */; };
+		E192DD962320C03200F4FDC6 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E192DD952320C03200F4FDC6 /* image.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E1149EFF23EAC6620036F6A0 /* baby_yoda.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = baby_yoda.jpeg; path = ../../../../Downloads/baby_yoda.jpeg; sourceTree = "<group>"; };
+		E1149F0123EACBD90036F6A0 /* woman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = woman.png; path = "../../../../../../var/folders/w_/8fhyy8k90rx6xrl3m8dnzhlh0000gn/T/TemporaryItems/(Документ сохраняется приложением «screencaptureui»)/woman.png"; sourceTree = "<group>"; };
+		E1149F0323ED92C00036F6A0 /* filter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = filter.metal; sourceTree = "<group>"; };
+		E14C8CEE23E9D93D000DE644 /* GaussianFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaussianFilter.swift; sourceTree = "<group>"; };
 		E192DD802320BE4F00F4FDC6 /* ImageFilters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFilters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E192DD832320BE4F00F4FDC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E192DD852320BE4F00F4FDC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,7 @@
 		E192DD8A2320BE5100F4FDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E192DD8D2320BE5100F4FDC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E192DD8F2320BE5100F4FDC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E192DD952320C03200F4FDC6 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +64,17 @@
 		E192DD822320BE4F00F4FDC6 /* ImageFilters */ = {
 			isa = PBXGroup;
 			children = (
+				E192DD952320C03200F4FDC6 /* image.jpg */,
+				E1149F0123EACBD90036F6A0 /* woman.png */,
+				E1149EFF23EAC6620036F6A0 /* baby_yoda.jpeg */,
 				E192DD832320BE4F00F4FDC6 /* AppDelegate.swift */,
 				E192DD852320BE4F00F4FDC6 /* ViewController.swift */,
 				E192DD872320BE4F00F4FDC6 /* Main.storyboard */,
 				E192DD8A2320BE5100F4FDC6 /* Assets.xcassets */,
 				E192DD8C2320BE5100F4FDC6 /* LaunchScreen.storyboard */,
+				E1149F0323ED92C00036F6A0 /* filter.metal */,
 				E192DD8F2320BE5100F4FDC6 /* Info.plist */,
+				E14C8CEE23E9D93D000DE644 /* GaussianFilter.swift */,
 			);
 			path = ImageFilters;
 			sourceTree = "<group>";
@@ -123,8 +138,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E192DD8E2320BE5100F4FDC6 /* LaunchScreen.storyboard in Resources */,
+				E1149F0023EAC6620036F6A0 /* baby_yoda.jpeg in Resources */,
 				E192DD8B2320BE5100F4FDC6 /* Assets.xcassets in Resources */,
 				E192DD892320BE4F00F4FDC6 /* Main.storyboard in Resources */,
+				E192DD962320C03200F4FDC6 /* image.jpg in Resources */,
+				E1149F0223EACBD90036F6A0 /* woman.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E192DD862320BE4F00F4FDC6 /* ViewController.swift in Sources */,
+				E14C8CEF23E9D93D000DE644 /* GaussianFilter.swift in Sources */,
 				E192DD842320BE4F00F4FDC6 /* AppDelegate.swift in Sources */,
+				E1149F0423ED92C00036F6A0 /* filter.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +234,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -269,6 +290,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +311,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladeliseev.ImageFilters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -307,6 +331,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MTLLINKER_FLAGS = "-cikernel";
+				MTL_COMPILER_FLAGS = "-fcikernel";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladeliseev.ImageFilters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
