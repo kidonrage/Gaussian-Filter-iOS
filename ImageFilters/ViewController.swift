@@ -12,17 +12,16 @@ import CoreImage
 class ViewController: UIViewController {
     
     var filter = GaussianFilter()
+    let sizeItems = [3, 5, 11]
+    var selectedImage: UIImage!
 
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var sigmaSlider: UISlider!
+    @IBOutlet weak var kernelSizeSegmentedControl: UISegmentedControl!
     
     @IBAction func filterButtonTapped(_ sender: Any) {
-        guard let currentImage = imageView.image else {
-            print("No image!")
-            return
-        }
-        
-        filter.inputImage = CIImage(image: currentImage)
+        filter.kernelSize = sizeItems[kernelSizeSegmentedControl.selectedSegmentIndex]
+        filter.inputImage = CIImage(image: selectedImage)
         filter.sigma = sigmaSlider.value
         
         if let outputImage = filter.outputImage {
@@ -41,10 +40,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        for (index, size) in sizeItems.enumerated() {
+            kernelSizeSegmentedControl.setTitle("\(size)x\(size)", forSegmentAt: index)
+        }
+        
         guard let imgUrl = Bundle.main.url(forResource: "woman", withExtension: "png") else {return}
         
         if let image = UIImage(contentsOfFile: imgUrl.path) {
+            selectedImage = image
             imageView.image = image
         }
     }

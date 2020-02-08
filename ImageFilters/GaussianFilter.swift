@@ -31,15 +31,16 @@ class GaussianFilter: CIFilter {
     {
         if let inputImage = inputImage {
             
-            let arguments = [inputImage, sigma] as [Any]
+            let arguments = [inputImage, kernelSize, sigma] as [Any]
+        
             let extent = inputImage.extent
             
-            return kernel.apply(extent: extent,
-                                        roiCallback:
-                {
-                    (index, rect) in
+            return kernel.apply(
+                extent: extent,
+                roiCallback: { (index, rect) in
                     return rect
-            }, arguments: arguments)
+                },
+                arguments: arguments)
         }
         return nil
     }
